@@ -3,5 +3,5 @@ languageCode = 'en-us'
 title = 'My New Hugo Site'
 
 [params]
-site = 'https://greycloak.com'
+site = 'https://tyuo.netlify.app'
 # hosturl for sharing
