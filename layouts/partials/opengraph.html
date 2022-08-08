@@ -43,9 +43,11 @@
 {{- end }}
 <meta name="description" content="{{ $summary }}" />
 <meta name="twitter:creator" content="{{ $s.twitter }}">
+<meta name="twitter:site" content="{{$s.twitter}}" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:title" content="{{ .Title }}" />
 <meta name="twitter:description" description="{{ $summary }}" />
+
 <meta property="og:url" content="{{ $permalink }}" />
 <meta property="og:title" content="{{ $title }}" />
 <meta property="og:description" content="{{ $summary }}" />
@@ -53,10 +55,10 @@
 {{$featureImage := .Params.featureImage}}
 {{if $shareImage}}
 <meta property="og:image" content="{{$shareImage | absURL}}" />
-<meta name="twitter:image" content="{{$shareImage | absURL}}" />
+
 {{else}} 
 <meta property="og:image" content="{{$featureImage | absURL}}" />
-<meta name="twitter:image" content="{{$featureImage | absURL}}" />
+
 {{end}} 
 {{- $keywords := "" }}
 {{- with $s.keywords }}
