@@ -54,10 +54,10 @@
 {{$shareImage := .Params.shareImage}}
 {{$featureImage := .Params.featureImage}}
 {{if $shareImage}}
-<meta property="og:image" content="{{$shareImage | absURL}}" />
+<meta name="twitter:image" content="{{$shareImage | absURL}}" />
 
 {{else}} 
-<meta property="og:image" content="{{$featureImage | absURL}}" />
+<meta name="twitter:image" content="{{$featureImage | absURL}}" />
 
 {{end}} 
 {{- $keywords := "" }}
