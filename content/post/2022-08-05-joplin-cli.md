@@ -1,18 +1,18 @@
 ---
 layout: post
-title:  "Joplin CLI on Raspberry Pi 4"
-date:   2022-08-05 12:00:00 +0530
+title: "Joplin CLI on Raspberry Pi 4"
+date: 2022-08-05 12:00:00 +0530
 categories: blog
-author:     vince
+author: vince
 thumbnail: /images/terminal-icon.png
 
-featureImage: https://joplinapp.org/images/ScreenshotTerminal.png
-featureImageAlt: 'Joplin'
+featureImage: /images/squarethumb.jpg
+featureImageAlt: "Joplin"
 
 tags:
- - linux
- - raspberrypi
- - manjaro
+  - linux
+  - raspberrypi
+  - manjaro
 ---
 
 I've been searching for a way to keep my notes and todos organized. Over the years I've tried some interesting solutions like Evernote, Google Tasks, and even Task Warrior. All of them have their pros and cons but I've recently really liked the flexibility and ease of use of [Joplin](https://joplinapp.org/).
@@ -37,6 +37,5 @@ Lastly, you should be ready to go with Joplin. Their [webpage](https://joplinapp
     sudo ln -s ~/.joplin-bin/bin/joplin /usr/bin/joplin
 
 Keep in mind you may need to reload your terminal to launch it, but you should be good to go.
-
 
 If you're a vim user like me, keep in mind you can customize the keybindings. The only one I find a little annoying is that quitting Joplin itself is done with `q` instead of `:q` but hopefully that can get addressed at some point. I've forked the keybindings I use and you see the [gist here](https://gist.github.com/vince/dfe3fb3230f92eccf7d57f530afbd34c). Simply put that file in `~/.config/joplin/keymap.json` and restart.
